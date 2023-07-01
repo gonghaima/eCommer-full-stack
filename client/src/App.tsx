@@ -6,12 +6,12 @@ import ProductList from './pages/ProductList';
 import Register from './pages/Register';
 
 function App() {
+  return <Home />;
   return <Cart />;
   return <Login />;
   return <Register />;
   return <Product />;
   return <ProductList />;
-  return <Home />;
 }
 
 export default App;
