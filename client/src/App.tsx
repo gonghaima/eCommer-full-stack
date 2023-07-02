@@ -6,9 +6,9 @@ import ProductList from './pages/ProductList';
 import Register from './pages/Register';
 
 function App() {
+  return <Login />;
   return <Home />;
   return <Cart />;
-  return <Login />;
   return <Register />;
   return <Product />;
   return <ProductList />;
