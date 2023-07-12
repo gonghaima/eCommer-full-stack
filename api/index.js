@@ -5,7 +5,11 @@ const mongoose = require('mongoose');
 
 dotenv.config();
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: 'e-commerce-db',
+  })
   .then(() => {
     console.log('db connected!!!');
     // app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
