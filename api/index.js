@@ -2,6 +2,10 @@ const express = require('express');
 const dotenv = require('dotenv');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require('cors');
+
+const userRoute = require('./routes/user');
+const authRoute = require('./routes/auth');
 
 dotenv.config();
 mongoose
@@ -21,6 +25,11 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+
+app.use(cors());
+app.use(express.json());
+app.use('/api/auth', authRoute);
+app.use('/api/users', userRoute);
 
 app.listen(5000, () => {
   console.log('BE server is running!!');
