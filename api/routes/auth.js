@@ -41,7 +41,8 @@ router.post('/login', async (req, res) => {
 
     const inputPassword = req.body.password;
 
-    originalPassword != inputPassword && res.status(401).json('Wrong Password');
+    if (originalPassword != inputPassword)
+      return res.status(401).json('Wrong Password');
 
     const accessToken = jwt.sign(
       {
@@ -51,7 +52,6 @@ router.post('/login', async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: '3d' }
     );
-
     const { password, ...others } = user._doc;
     res.status(200).json({ ...others, accessToken });
   } catch (err) {
