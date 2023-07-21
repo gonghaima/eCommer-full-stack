@@ -1,3 +1,4 @@
+// image find from https://pngtree.com/so/dresses   inspect network, get png url from there
 export const sliderItems = [
   {
     id: 1,
@@ -48,7 +49,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: 'https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388',
+    img: 'https://png.pngtree.com/png-clipart/20230527/original/pngtree-ordination-dress-a1-png-image_9171658.png',
   },
   {
     id: 3,
@@ -56,7 +57,7 @@ export const popularProducts = [
   },
   {
     id: 4,
-    img: 'https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png',
+    img: 'https://png.pngtree.com/png-clipart/20230215/original/pngtree-haldi-bride-yellow-outfit-indian-wedding-illustration-mehndi-dress-png-image_8956643.png',
   },
   {
     id: 5,
@@ -68,7 +69,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: 'https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png',
+    img: 'https://png.pngtree.com/png-clipart/20230427/original/pngtree-indian-wedding-model-bride-red-dress-for-vivah-sangeet-reception-and-png-image_9112456.png',
   },
   {
     id: 8,
