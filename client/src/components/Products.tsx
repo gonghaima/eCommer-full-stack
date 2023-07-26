@@ -67,7 +67,7 @@ function Products({ cat, filters, sort }) {
 
   return (
     <Container>
-      {(cat ? filteredProducts : products).map((item) => (
+      {(cat ? filteredProducts : products.slice(0, 8)).map((item) => (
         <Product
           item={item}
           key={item.id ?? getRandomInt(10, 10000)}
