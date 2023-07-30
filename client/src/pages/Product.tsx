@@ -144,7 +144,7 @@ const Product = () => {
   };
 
   const handleClick = () => {
-    dispatch(addProduct({ product, quantity }));
+    dispatch(addProduct({ ...product, quantity, color, size }));
   };
 
   useEffect(() => {
