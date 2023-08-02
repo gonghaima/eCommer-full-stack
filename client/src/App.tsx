@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Cart from './pages/Cart';
+import Success from './pages/Success';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Product from './pages/Product';
@@ -27,6 +28,7 @@ function App() {
           <Route path="/products/:category" element={<ProductList />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/success" element={<Success />} />
           <Route path="/login" element={user ? <RedirectHome /> : <Login />} />
           <Route
             path="/register"
