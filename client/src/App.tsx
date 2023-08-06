@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Product from './pages/Product';
 import ProductList from './pages/ProductList';
 import Register from './pages/Register';
+import { useSelector } from 'react-redux';
 
 function RedirectHome() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ function RedirectHome() {
 }
 
 function App() {
-  const user = true;
+  const user = useSelector((state) => state.user.currentUser);
 
   return (
     <React.StrictMode>
