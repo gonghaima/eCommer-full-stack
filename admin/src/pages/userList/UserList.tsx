@@ -2,6 +2,7 @@ import './userList.css';
 import { DataGrid } from '@material-ui/data-grid';
 import { DeleteOutline } from '@material-ui/icons';
 import { userRows } from '../../dummyData';
+import { Link } from 'react-router-dom';
 
 import { useState } from 'react';
 
@@ -45,9 +46,9 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <a href={'/user/' + params.row.id}>
+            <Link to={'/user/' + params.row.id}>
               <button className="userListEdit">Edit</button>
-            </a>
+            </Link>
             <DeleteOutline
               className="userListDelete"
               onClick={() => handleDelete(params.row.id)}

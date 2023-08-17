@@ -5,6 +5,7 @@ import Topbar from './components/topbar/Topbar';
 import Home from './pages/home/home';
 import React from 'react';
 import UserList from './pages/userList/UserList';
+import User from './pages/user/user';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<UserList />} />
+            <Route path="/user/:userId" element={<User />} />
           </Routes>
         </div>
       </BrowserRouter>
