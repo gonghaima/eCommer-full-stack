@@ -6,6 +6,7 @@ import Home from './pages/home/home';
 import React from 'react';
 import UserList from './pages/userList/UserList';
 import User from './pages/user/user';
+import ProductList from './pages/productList/ProductList';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<UserList />} />
             <Route path="/user/:userId" element={<User />} />
+            <Route path="/products" element={<ProductList />} />
           </Routes>
         </div>
       </BrowserRouter>
