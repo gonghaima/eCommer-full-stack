@@ -7,6 +7,7 @@ import React from 'react';
 import UserList from './pages/userList/UserList';
 import User from './pages/user/user';
 import ProductList from './pages/productList/ProductList';
+import Product from './pages/product/Product';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/users" element={<UserList />} />
             <Route path="/user/:userId" element={<User />} />
             <Route path="/products" element={<ProductList />} />
+            <Route path="/product/:productId" element={<Product />} />
           </Routes>
         </div>
       </BrowserRouter>
