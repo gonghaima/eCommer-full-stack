@@ -27,7 +27,7 @@ router.post('/login', async (req, res) => {
   try {
     console.log(req.body.user_name);
     const user = await User.findOne({
-      username: req.body.user_name,
+      username: req.body.user_name || req.body.username,
     });
 
     if (!user) return res.status(401).json('Wrong User Name');
