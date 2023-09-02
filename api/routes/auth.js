@@ -53,10 +53,10 @@ router.post('/login', async (req, res) => {
       { expiresIn: '3d' }
     );
     const { password, ...others } = user._doc;
-    res.status(200).json({ ...others, accessToken });
+    return res.status(200).json({ ...others, accessToken });
   } catch (err) {
     console.log({ err });
-    res.status(500).json(err);
+    return res.status(500).json(err);
   }
 });
 
